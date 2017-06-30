@@ -1,0 +1,26 @@
+*{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#header img {
+	width: 110em;
+  height: 20em
+}
+
+body {
+	font-size: {{size|safe}};
+}
+
+.box {
+	background-color: {{color|safe}};
+}
+
+.scrollable {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.height-25em {
+    height: 25em;
+}

@@ -1,0 +1,20 @@
+{% extends "carpeta_plantillas/estandar.html" %}
+{% block title %}
+    <h1>Desde aqui puedes registrarte en la Aplicacion</h1>
+{% endblock %}
+
+{% block lista_usu %}
+{% endblock %}
+
+{% block Filtros %}
+    {{ filtro|safe}}
+{% endblock %}
+
+{% block content %}
+<h1>Rellena el siguiente formulario:</h1>
+    {{ content|safe }}
+{% endblock %}
+
+{% block formularios %}
+    {{ formulario|safe}}
+{% endblock %}

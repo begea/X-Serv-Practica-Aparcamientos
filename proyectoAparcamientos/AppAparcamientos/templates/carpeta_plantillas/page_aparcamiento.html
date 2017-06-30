@@ -1,0 +1,20 @@
+{% extends "carpeta_plantillas/estandar.html" %}
+{% block title %}
+    <h1>Pagina de Informacion del Aparcamiento seleccionado</h1>
+{% endblock %}
+
+{% block lista_usu %}
+{% endblock %}
+
+{% block Filtros %}
+    {{ filtro|safe}}
+{% endblock %}
+
+{% block content %}
+<h1>Datos del Aparcamiento:</h1>
+    {{ content|safe }}
+{% endblock %}
+
+{% block formularios %}
+    {{ formulario|safe}}
+{% endblock %}

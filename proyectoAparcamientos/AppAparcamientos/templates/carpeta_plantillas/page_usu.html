@@ -1,0 +1,20 @@
+{% extends "carpeta_plantillas/estandar.html" %}
+{% block title %}
+    <h1>Esto es: {{title}}</h1>
+{% endblock %}
+
+{% block lista_usu %}
+{% endblock %}
+
+{% block Filtros %}
+    {{ filtro|safe}}
+{% endblock %}
+
+{% block content %}
+<h1>Listado de Aparcamientos:</h1>
+    {{ content|safe }}
+{% endblock %}
+
+{% block formularios %}
+    {{ formulario|safe}}
+{% endblock %}

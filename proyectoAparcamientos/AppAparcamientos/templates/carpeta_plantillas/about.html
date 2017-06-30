@@ -1,0 +1,9 @@
+{% extends "carpeta_plantillas/estandar.html" %}
+{% block title %}
+    <h1>Pagina About con la informacion y la Autoria de la Practica</h1>
+{% endblock %}
+
+{% block content %}
+<h1>Descripcion general de la practica:</h1>
+    {{ content|safe }}
+{% endblock %}

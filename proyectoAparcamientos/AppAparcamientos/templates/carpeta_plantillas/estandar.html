@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Aparcamientos Madrid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    <!--.style1 {color: #A53512}-->
+    </style>
+    <link rel="shortcut icon" type="image/png" href="http://websitepart.com/favicon/pioneeroutsourcing.com.ico"/>
+  </head>
+  <body>
+    <div class="all">
+	  <div class="box">
+	  <div class="menu"><a href="/">Inicio</a><a href="/aparcamientos/">Todos</a><a href="/about/">About</a></div>
+	  <div class="header"><img alt="" style="float:right; " src="http://urbanmatter.com/wp-content/uploads/2015/11/Parking.jpg" width="75%" height="250"/>
+		    <h1>{% block title %}{% endblock %}</h1>
+		<div class="clearfix"></div>
+	  </div>
+		<div class="newsbar">
+    <div class="p2"><h1>Logearse</h1>{{ formulario_logear|safe }}</div>
+		<div class="p2">
+    {% block lista_usu %}{% endblock %}
+	  </div>
+		</div>
+		<div class="content">
+    <div class="p1">{% block Filtros %}{% endblock %}</div>
+		  <p>{% block content %}{% endblock %}</p>
+		  <p>{% block formularios %}{% endblock %}</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="footer">Esta aplicacion utiliza datos del portal de datos abiertos de la ciudad de Madrid <a href="http://datos.munimadrid.es/portal/site/egob/menuitem.ac61933d6ee3c31cae77ae7784f1a5a0/?vgnextoid=00149033f2201410VgnVCM100000171f5a0aRCRD&format=xml&file=0&filename=202584-0-aparcamientos-residentes&mgmtid=e84276ac109d3410VgnVCM2000000c205a0aRCRD&preview=full"> Datos XML</a></div>
+	  </div>
+    </div>
+  </body>
+</html>

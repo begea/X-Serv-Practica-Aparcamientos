@@ -1,0 +1,21 @@
+{% extends "carpeta_plantillas/estandar.html" %}
+{% block title %}
+    <h1>Bienvenido a la pagina de Aparcamientos de Madrid</h1>
+{% endblock %}
+
+{% block lista_usu %}
+<h1>Usuarios ya registrados: </h1>
+    {{ lista_usu|safe }}
+{% endblock %}
+
+{% block Filtros %}
+    {{ filtro|safe}}
+{% endblock %}
+
+{% block content %}
+<h1>Aparcamientos mas comentados:</h1>
+    {{ content|safe }}
+{% endblock %}
+
+{% block formularios %}
+{% endblock %}
